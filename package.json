@@ -1,0 +1,40 @@
+{
+  "name": "oioapp-cli",
+  "version": "0.0.1",
+  "description": "A server, build system, and helpers for react apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oioapp/oioapp-cli.git"
+  },
+  "author": "Clarence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oioapp/oioapp-cli/issues"
+  },
+  "homepage": "https://github.com/oioapp/oioapp-cli",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "es6-promise": "^3.1.2",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "object-assign": "^4.0.1",
+    "oioapp-pack": "^1.3.19",
+    "oioapp-server": "^0.0.1",
+    "replace": "~0.3.0",
+    "rimraf": "~2.2.8"
+  },
+  "bin": {
+    "oioapp": "./bin/oioapp",
+    "oioapp-new": "./bin/oioapp-new",
+    "oioapp-build": "./bin/oioapp-build",
+    "oioapp-run": "./bin/oioapp-run",
+    "oioapp-debug": "./bin/oioapp-debug",
+    "oioapp-config": "./bin/oioapp-config"
+  }
+}

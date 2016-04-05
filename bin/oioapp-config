@@ -2,7 +2,7 @@
 
 var Program = require('commander');
 var colors = require('colors');
-var pack = require('reapp-pack');
+var pack = require('oioapp-pack');
 var findConfig = require('../lib/findConfig');
 
 var dir = process.cwd();
@@ -10,7 +10,7 @@ var dir = process.cwd();
 Program
   .parse(process.argv);
 
-require('../lib/checkIsReapp')(dir);
+require('../lib/checkIsOioapp')(dir);
 
 var args = Program.args;
 var type = args.length && args[0] || 'run';
